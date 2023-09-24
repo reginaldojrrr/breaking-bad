@@ -1,0 +1,52 @@
+@use 'variables';
+
+.about {
+    padding: 0 5.6vw 5.6vw;
+    margin-bottom: 40px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        align-items: center;
+
+        @media (max-width: 860px) {
+            flex-direction: column;
+        }
+
+        &__container__image {
+            min-width: 400px;
+            padding: 16px;
+            border: 4px solid variables.$buttonBackgroundColor;
+            position: relative;
+            margin-bottom: 32px;
+
+            img {
+                width: 100%;
+                max-width: 520px;
+            }
+        }
+
+        &__text {
+            max-width: 800px;
+
+            .paragraph {
+                margin-top: 8px;
+                text-transform: uppercase;
+            }
+
+            &__logo {
+                display: flex;
+                justify-content: center;
+                margin: 24px 0;
+            }
+
+            .detail {
+                text-align: center;
+                padding-bottom: 16px;
+            }
+        }
+    }
+
+    
+}

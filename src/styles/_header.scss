@@ -1,0 +1,30 @@
+@use 'variables';
+
+.header {
+    background-color: variables.$backgroundColor;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5.6vw;
+        height: 60px;
+    }
+
+    &__logo {
+        
+        h1 {
+            display: flex;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 12px;
+
+
+        i {
+            color: variables.$fontColor;
+        }
+    }
+}

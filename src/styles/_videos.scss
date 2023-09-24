@@ -1,0 +1,46 @@
+@use 'variables';
+
+.videos {
+    padding: 0 5.6vw 5.6vw;
+
+    .paragraph {
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        margin-bottom: 0;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item {
+            max-width: 420px;
+
+            &__thumb {
+                position: relative;
+
+                .play-button {
+                    color: variables.$fontColor;
+                    font-size: 48px;
+                    opacity: .5;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
